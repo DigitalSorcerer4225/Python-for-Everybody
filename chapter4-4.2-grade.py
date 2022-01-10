@@ -7,20 +7,7 @@
 # < 0.6 F
 # If the user enters a value out of range, print a suitable error message and exit. For the test, enter a score of 0.85.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# My previous code:
+# Previous Code
     # try:
     #     s = float(input("Input % Grade:"))
     # except:
@@ -37,3 +24,33 @@
     # elif s >= 0.7: print("C")
     # elif s >= 0.6: print("D")
     # elif s < 0.6: print("F")
+# Pseudo Code:
+
+    # if score is out of range:
+    #     print an error
+    # elif score is >= 0.9:
+    #     print A
+    # elif score is >= 0.8:
+    #     print B
+    # elif score is >= 0.7:
+    #     print C
+    # elif score is >= 0.6:
+    #     print D
+    # elif score is <0.6:
+    #     print F
+# Current Code:
+score = input("Enter score between 0.0 and 1.0:")
+s = float(score)
+
+if s < 0.0 or s > 1.0 :
+    print("Error. Please enter a number between 0.0 and 1.0!")
+elif s >= 0.9:
+    print("A")
+elif s >= 0.8:
+    print("B")
+elif s >= 0.7:
+    print("C")
+elif s >= 0.6:
+    print("D")
+elif s <0.6:
+    print("F")

@@ -37,15 +37,6 @@
     # 
 
 
-
-#Pseudocode:
-    # Open file mbox-short.txt
-    # Read the opened file line by line.
-    # Find a line that starts with 'From'. Don't include the lines that start with 'From:'
-    # Parse the line that starts with 'From' using split()
-    # Print out the second word in the line (address of the person who sent the message)
-    # Print the total number of the extracted email addresses
-
 count = 0
     
 with open('mbox-short.txt', 'r') as file_object:
